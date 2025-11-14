@@ -1,4 +1,5 @@
 void main(){
+//qs 1
   int a=0,b=1;
   for (int i=0;i<10;i++){
     print(a);
@@ -6,7 +7,7 @@ void main(){
     a=b;
     b=nextNum;
   }
-
+//qs 2
   List <int> numberSeries=[3, 9, 1, 6, 4, 2, 8, 5, 7];
   int largest=numberSeries[0];
   for(int i=0;i<numberSeries.length;i++){
@@ -15,28 +16,25 @@ void main(){
     }
   }
   print("Largest value in numbers list is: $largest");
-
+//qs 3
   for(int i=1;i<=10;i++){
     print("5 * $i = ${5*i}");
   }
-
+  //qs 4
   String text = "radar";
-
   bool isPalindrome = true;
-
   for (int i = 0; i < text.length / 2; i++) {
     if (text[i] != text[text.length - 1 - i]) {
       isPalindrome = false;
       break;
     }
   }
-
   if (isPalindrome) {
     print('"$text" is a palindrome.');
   } else {
     print('"$text" is NOT a palindrome.');
   }
-
+//qs 5
     for (int i = 1; i <= 5; i++) {
     String row = "";
     for (int j = 1; j <= i; j++) {
@@ -44,14 +42,14 @@ void main(){
     }
     print(row);
   }
-
+//qs 6
   List<int> numbers = [2, 7, 5, 9, 3, 8, 1, 6];
   for (int num in numbers) {
     if (num > 5) {
       print(num);
     }
   }
-
+//qs 7
   String words = "Hello World";
   int vowelCount = 0;
   for (int i = 0; i < words.length; i++) {
